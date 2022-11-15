@@ -187,13 +187,13 @@ describe("Operaciones iterables", () => {
         // p.ej. "Hola".endsWith('a') devuelve true
 
 
-        function terminaEn(str) {
+        function terminaEnC(str) {
             if (str.endsWith('c')) {
                 return true;
             }
         }
 
-        let result = knownExoplanets.filter( terminaEn );
+        let result = knownExoplanets.filter( terminaEnC );
         
 
         // todos los planetas de result terminan con la letra c
@@ -208,9 +208,9 @@ describe("BONUS", () => {
     it("encuentra a yippee", () => {
         let arrayArbitrario = ["ernesto", "serrallonga", 99, 999, true, undefined, "yippee"]
 
-        // en qué índice del array se encuentra yippee?
-        let result = "???";
+        // en qué índice del array se encuentra yippee? 
+        let result = arrayArbitrario["???"];
 
-        expect(result.to.equal("yippee")); // no me sale
+        expect(result).to.equal("yippee"); 
     })
 })
