@@ -209,7 +209,10 @@ describe("BONUS", () => {
         let arrayArbitrario = ["ernesto", "serrallonga", 99, 999, true, undefined, "yippee"]
 
         // en qué índice del array se encuentra yippee? 
-        let result = arrayArbitrario["???"];
+        let result = "???"
+        
+        // solución:
+        // let result = arrayArbitrario[6];
 
         expect(result).to.equal("yippee"); 
     })
